@@ -32,6 +32,7 @@ function ProfessionalForm({ takeInput, formData, setCurrentForm }) {
         emailjs.sendForm(serviceId, templateId, formRef.current, userId)
             .then((response) => {
                 console.log('Email sent successfully!', response);
+                alert("Email sent successfully")
             })
             .catch((error) => {
                 console.error('Error sending email:', error);
